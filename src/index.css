@@ -1,0 +1,85 @@
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+  background: linear-gradient(135deg, #0d1b2a, #1b263b, #274c77);
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* Scroll snapping for sections */
+.snap-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: auto;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+.snap-child {
+  scroll-snap-align: start;
+  min-height: 100vh;
+}
+
+/* Remove this for Skills and Projects */
+.section-no-snap {
+  scroll-snap-align: none;
+  min-height: auto;
+}
+
+
+/* Optional: soft text shadow for readability */
+body {
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+}
+
+/* Scrollbar Styles */
+/* Webkit-based browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 6px; /* Smaller scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 6px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #6ef3d6;
+  border-radius: 20px;
+  box-shadow: 0 0 8px #6ef3d6;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4ed1b9;
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin; /* smaller than default */
+  scrollbar-color: #6ef3d6 rgba(255, 255, 255, 0.05);
+}

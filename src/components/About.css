@@ -1,0 +1,79 @@
+.about-section {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+ background: transparent; /* Inherit from App container */
+  color: #ffffff;
+}
+
+.about-box {
+  display: flex;
+  gap: 30px;
+  max-width: 1100px;
+  width: 100%;
+  min-height: 380px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(110, 243, 214, 0.3);
+  backdrop-filter: blur(10px);
+  padding: 30px 25px;
+  transform-style: preserve-3d;
+  transition: all 0.4s ease;
+}
+
+.about-box:hover {
+  box-shadow: 0 0 35px rgba(110, 243, 214, 0.5);
+  transform: perspective(1200px) rotateX(1deg) rotateY(2deg);
+}
+
+.about-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-left h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #6ef3d6;
+}
+
+.about-left p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #c7d1e0;
+}
+
+.about-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-right canvas {
+  max-width: 350px;
+  width: 100%;
+}
+
+/* Responsive for mobile */
+@media (max-width: 900px) {
+  .about-box {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+  }
+
+  .about-left, .about-right {
+    width: 100%;
+  }
+
+  .about-right {
+    display: none; /* 👈 Hides the animation on small screens */
+  }
+
+  .about-box {
+    min-height: auto;
+  }
+}

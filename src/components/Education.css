@@ -1,0 +1,143 @@
+.education-section {
+  padding: 60px 20px;
+  background: transparent;
+  color: #ffffff;
+  text-align: center;
+}
+
+.education-title {
+  color: #6ef3d6;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  /* border-bottom: 3px solid #6ef3d6; */
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+.timeline-container {
+  position: relative;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  background: #6ef3d633;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.timeline-item {
+  width: 50%;
+  padding: 20px 20px;
+  position: relative;
+}
+
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
+
+.timeline-content {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(110, 243, 214, 0.3);
+  position: relative;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+  box-shadow: 0 0 18px rgba(110, 243, 214, 0.7), 0 0 4px #6ef3d6;
+  transform: translateY(-4px);
+}
+
+.timeline-content h3 {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.timeline-content p {
+  font-size: 0.95rem;
+  color: #cccccc;
+  margin-bottom: 8px;
+}
+
+.timeline-badge {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 6px 14px;
+  background: #6ef3d6;
+  color: #1b263b;
+  font-weight: 600;
+  border-radius: 25px;
+  font-size: 0.85rem;
+}
+
+/* ✅ Blue dot placed on the timeline
+.timeline-dot {
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border: 3px solid #6ef3d6;
+  border-radius: 50%;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.timeline-dot::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #6ef3d6;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+
+/* 📱 Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .timeline-item {
+    width: 100%;
+    left: 0 !important;
+    text-align: left !important;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .timeline-line {
+    display: none;
+  }
+
+  .timeline-dot {
+    display: none;
+  }
+
+  .timeline-content {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .timeline-content h3,
+  .timeline-content p {
+    text-align: left;
+  }
+}

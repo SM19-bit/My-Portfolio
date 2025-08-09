@@ -1,0 +1,113 @@
+.skills-section {
+  padding: 80px 60px;
+  background: transparent;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 50px; /* Ensures spacing before Projects */
+  position:relative;
+  z-index: 1; /* Ensures it appears above other sections */
+}
+
+.skills-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  border-bottom: 3px solid #6ef3d6;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+.skills-category {
+  margin-bottom: 40px;
+}
+
+.skills-category h3 {
+  font-size: 1.3rem;
+  color: #6ef3d6;
+  margin-bottom: 20px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+  justify-items: center;
+}
+
+.skill-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+  width: 130px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+.skill-icon {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+/* Icon Colors */
+.skill-react     { color: #61DBFB; }
+.skill-html      { color: #E44D26; }
+.skill-css       { color: #1572B6; }
+.skill-js        { color: #F7DF1E; }
+.skill-bootstrap { color: #7952B3; }
+.skill-tailwind  { color: #38BDF8; }
+.skill-framer    { color: #EA4C89; }
+.skill-node      { color: #3C873A; }
+.skill-express   { color: #ffffff; }
+.skill-mongo     { color: #4DB33D; }
+.skill-jwt       { color: #EA580C; }
+.skill-java      { color: #f89820; }
+
+/* Hover Glow */
+.skill-card.react:hover     { box-shadow: 0 0 15px #61DBFB; }
+.skill-card.html:hover      { box-shadow: 0 0 15px #E44D26; }
+.skill-card.css:hover       { box-shadow: 0 0 15px #1572B6; }
+.skill-card.js:hover        { box-shadow: 0 0 15px #F7DF1E; }
+.skill-card.bootstrap:hover { box-shadow: 0 0 15px #7952B3; }
+.skill-card.tailwind:hover  { box-shadow: 0 0 15px #38BDF8; }
+.skill-card.framer:hover    { box-shadow: 0 0 15px #EA4C89; }
+.skill-card.node:hover      { box-shadow: 0 0 15px #3C873A; }
+.skill-card.express:hover   { box-shadow: 0 0 15px #ffffff; }
+.skill-card.mongo:hover     { box-shadow: 0 0 15px #4DB33D; }
+.skill-card.jwt:hover       { box-shadow: 0 0 15px #EA580C; }
+.skill-card.java:hover      { box-shadow: 0 0 15px #f89820; }
+
+.skill-card span {
+  font-size: 0.85rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 1280px) {
+  .skills-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skill-card {
+    width: 110px;
+    height: 110px;
+  }
+}

@@ -1,0 +1,133 @@
+.hero-container {
+  position: relative;
+  background: transparent; /* Inherit from App container */
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px 20px;
+  box-sizing: border-box;
+}
+
+.particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.hero-content {
+  z-index: 1;
+  max-width: 800px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  color: #6ef3d6;
+}
+
+.name-text {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #d8d9fa;
+  margin-top: 10px;
+}
+
+.tagline {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 20px 0;
+  color: #c1c2d9;
+}
+
+.desc-text {
+  font-size: 1rem;
+  color: #b0b3cc;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero-btn {
+  border: 1px solid #6ef3d6;
+  background: transparent;
+  color: #6ef3d6;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #6ef3d6;
+  color: #1a1d3b;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .name-text {
+    font-size: 2.2rem;
+  }
+
+  .tagline {
+    font-size: 1.4rem;
+  }
+
+  .desc-text {
+    font-size: 0.95rem;
+  }
+
+  .hero-btn {
+    font-size: 0.95rem;
+    padding: 10px 20px;
+  }
+}
+
+.typewriter {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 20px 0;
+  color: #6ef3d6;
+  min-height: 50px;
+}
+
+.scroll-down {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+  color: #6ef3d6;
+}
+
+.scroll-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation-timing-function: ease-in-out;
+}
+
+.scroll-text {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #6ef3d6;
+  text-shadow: 0 0 10px #6ef3d6;
+}
+
+.scroll-icon {
+  font-size: 1.8rem;
+  color: #6ef3d6;
+  text-shadow: 0 0 10px #6ef3d6, 0 0 20px #6ef3d6;
+}
