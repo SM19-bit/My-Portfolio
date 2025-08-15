@@ -12,15 +12,15 @@ function App() {
     <div className="app-container">
       <Navbar />
       <div className="snap-container">
-        <section className="snap-child"><Hero /></section>
-        <section className="snap-child"><About /></section>
-        <section className="snap-child"><Education /></section>
+        <section ><Hero /></section>
+        <section ><About /></section>
+        <section ><Education /></section>
 
         {/* Disable snap for these tall sections */}
-        <section className="snap-child"><Skills /></section>
-        <section className="snap-child" id="projects"><Projects /></section>
-        <section className="snap-child"><Certifications /></section>
-        <section className="snap-child"><Contact /></section>
+        <section ><Skills /></section>
+        <section  id="projects"><Projects /></section>
+        <section ><Certifications /></section>
+        <section ><Contact /></section>
 
       </div>
     </div>

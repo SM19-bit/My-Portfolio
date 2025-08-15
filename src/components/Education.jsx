@@ -35,7 +35,7 @@ const Education = () => {
             initial={{ opacity: 0, scale: 0.7 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: index * 0.2, type: "spring" }}
-            viewport={{ once: true }}
+            // viewport={{ once: true }}
           >
             <div className="timeline-content">
               <h3>{item.title}</h3>

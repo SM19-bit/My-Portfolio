@@ -51,7 +51,7 @@ const Hero = () => {
         <div className="hero-buttons">
           <a href="#projects"><button className="hero-btn">Check out my work</button></a>
           <a
-            href="https://drive.google.com/file/d/18przk0GInIMgaJ0XCDalD8r9fYpCW-Ex/view?usp=drive_link" //change resume link
+            href="https://drive.google.com/file/d/1yJgm1t6xpsEh505RLs8Wpp-w65PXYoTf/view?usp=sharing" //change resume link
             target="_blank"
             rel="noopener noreferrer"
           >

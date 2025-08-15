@@ -2,7 +2,7 @@
   padding: 60px 20px;
   display: flex;
   justify-content: center;
- background: transparent; /* Inherit from App container */
+  background: transparent;
   color: #ffffff;
 }
 
@@ -15,7 +15,7 @@
   background: rgba(255, 255, 255, 0.05);
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(110, 243, 214, 0.3);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(6px); /* reduced for better performance */
   padding: 30px 25px;
   transform-style: preserve-3d;
   transition: all 0.4s ease;
@@ -65,12 +65,13 @@
     padding: 25px;
   }
 
-  .about-left, .about-right {
+  .about-left,
+  .about-right {
     width: 100%;
   }
 
   .about-right {
-    display: none; /* 👈 Hides the animation on small screens */
+    display: none; /* Hide animation on small screens */
   }
 
   .about-box {
